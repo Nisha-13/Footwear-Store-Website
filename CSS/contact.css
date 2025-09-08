@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+:root{
+    --logo: #595959;
+    --search-color: #88c8bc;
+    --Black: #000000;
+    --border-color: #dee2e6;
+    --btn-color: #616161;
+    --white: #fff;
+    --para-color: #929292;
+    --blue: #88c8bc;
+    --menu: #616161;
+    --border-color: #dee2e6;
+    --whitesmoke: whitesmoke;
+    --error-color: #e8eaed;
+}
+
+.logo a {
+    color: var(--logo);
+    font-size: 34px !important;
+  }
+  .logo a:hover {
+    color: var(--logo);
+  }
+  .top {
+    margin: 50px 0 10px 0;
+  }
+  @media (max-width:992px) {
+    .top form{
+      margin-bottom: 3rem;
+    }
+    
+  }
+  .top .col-lg-3 form {
+    position: relative;
+  }
+  .top .col-lg-3 form input {
+    height: 45px;
+    position: absolute;
+    border-radius: 50px;
+    padding-left: 20px;
+    /* width: 90%; */
+    right: 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    outline: 0;
+  }
+  .top .col-lg-3 form button {
+    position: absolute;
+    height: 43px;
+    border: 0;
+    outline: 0;
+    right: 0px;
+    width: 43px;
+    border-radius: 50%;
+    background: var(--search-color);
+  }
+  .top .col-lg-3 form button i {
+    position: absolute;
+    top: 14px;
+    right: 13px;
+  }
+  .top .col-lg-3 form button:hover {
+    background: var(--Black);
+  }
+  /* End Top Section */
+  
+  /* Start Nav Section */
+    nav .collapse ul li.nav-item a {
+      /* font-family: "Rokkitt", Georgia, serif !important; */
+      font-size: 14px;
+    }
+    nav .collapse ul li {
+      padding: 10px 12px 10px 0;
+    }
+    .navbar .dropdown:hover .dropdown-menu{
+      display: block;
+    }
+    .dropdown-menu{
+      background: var(--Black);
+      min-width: 2rem !important;
+      color: var(--white);
+    }
+    .dropdown-item:hover{
+      background: transparent;
+      color: var(--white);
+    }
+    .dropdown-item{
+      padding: 0 1rem;
+      color: #999999;
+    }
+    .dropdown-item li a{
+      padding: 0 5px !important;
+    }
+    .dropdown-menu li{
+      padding: 5px !important;
+    }
+    .cart{
+      margin-left: 345px;
+    }
+    @media (max-width:992px) {
+      .cart{
+        margin-left: 0px;
+      }
+    }
+    @media (min-width:1200px) and (max-width:1400px) {
+      .cart{
+        margin-left: 250px;
+      }
+    }
+    @media (min-width:992px) and (max-width:1200px) {
+      .cart{
+        margin-left: 150px;
+      }
+    }
+    
+  /* Start Sale Section */
+  .texts{
+    position: relative;
+  }
+  .text1 a{
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .text-change{
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 22px;
+  }
+  .text1{
+    animation: ani1 10s infinite;
+  }
+  .text2{
+    animation: ani2 10s infinite;
+  }
+  @keyframes ani1{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+  @keyframes ani2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  } 
+
+
+.head span a{
+    text-decoration: none !important;
+    color: var(--blue);
+}
+.head span{
+    color: var(--logo);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+
+
+.contact-info{
+    margin-top: 50px;
+    padding: 2em;
+}
+.info h3{
+    font-family: "Rokkitt", Georgia, serif;
+}
+.contact-info .row p{
+    color: var(--menu);
+    font-weight: 300;
+    line-height: 1.8;
+}
+.contact-info .row p a{
+    text-decoration: none;
+    color: var(--menu);
+}
+
+
+
+.contact-forms{
+    background-color: var(--whitesmoke);
+    margin-top: 50px;
+    padding: 2em;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label{
+    margin-bottom: 8px;
+}
+.contact-forms h3{
+    font-family: "Rokkitt", Georgia, serif !important;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+.contact-forms form input{
+    height: 45px;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important
+}
+.contact-forms form label{
+    color: var(--menu);
+}
+.contact-forms form input[placeholder]{
+    font-size: 14px;
+}
+.contact-forms form input.send{
+    border-radius: 50px;
+    background: var(--btn-color);
+    border: 0;
+    color: var(--white);
+}
+form .form-group .submit{
+    padding: 10px 15px;
+    background: var(--btn-color);
+    color: var(--white);
+    border-radius: 50px;
+}
+form .form-group .submit:hover{
+    background: var(--Black);
+    color: var(--white);
+    transition: all 0.5s;
+}
+
+
+
+
+.error-container {
+    text-align: center;
+    background: var(--error-color);
+    padding: 290px 0;
+  }
+
+  .error-icon {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--btn-color);
+    font-size: 28px;
+    color: var(--white);
+    margin-bottom: 20px;
+    position: relative;
+    left: 45%;
+  }
+
+  .error-message {
+    position: relative;
+    font-size: 18px;
+    color: var(--menu);
+  }
+
+
+
+
+  
+footer{
+    padding: 250px 0 0 0;
+}
+@media (max-width:992px) {
+    footer{
+        padding: 0;
+    }
+    footer .footer-box{
+        padding: 1em;
+    }
+}
+footer .container .row{
+    --bs-gutter-x: 0rem !important;
+}
+footer .footer-boxes{
+    display: flex;
+    justify-content: space-around;
+} 
+.footer-box a{
+    color: var(--logo);
+    font-size: 14px;
+    padding-left: 0;
+}
+.footer-box a .nav-link{
+    padding-bottom: 0.2em !important;
+}
+.footer-box a:hover{
+    color: var(--logo);
+}
+.footer-box a:visited{
+    color: var(--logo);
+}
+.footer-box h4{
+    font-family: "Rokkitt", Georgia, serif !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.footer-box p{
+    line-height: 1.8;
+    color: var(--logo);
+}
+.footer-box .icon a i{
+    font-size: 20px;
+    color: var(--logo);
+}
+
+
+.last{
+    margin: 100px 0 20px 0;
+}
+.last p{
+    color: var(--para-color);
+    /* color: var(--logo); */
+}
+.last p a{
+    text-decoration: none;
+    color: var(--para-color);
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; 
+  border: none;
+  outline: none;
+  background-color: var(--btn-color);
+  color: var(--white);
+  cursor: pointer;
+  padding: 13px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+::selection{
+  color: var(--white);
+  background: var(--btn-color);
+}
